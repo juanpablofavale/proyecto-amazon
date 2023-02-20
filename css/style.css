@@ -1,0 +1,129 @@
+*{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+#navbarNavDropdown{
+    display: flex;
+    justify-content: flex-end;
+   
+    padding-right:14rem;
+
+  }
+  .navbar,.juegos {
+    background-color: #232f3e;
+    padding-left:2rem;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size:12px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #b5b5b5;
+  }
+  #idioma
+  {font-size:16px;
+  }
+  
+  
+  .dropdown-toggle::after {
+
+    content: "";
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: url(../images/flecha_abajo.svg) no-repeat center;
+    border-color:transparent;
+    vertical-align: middle;
+  }
+
+    .dropdown-menu
+    {
+      background-color: #3d2e4b ;
+
+  
+      color:aqua;
+    }
+
+    .dropdown-item {
+      color:   #b3aabd  ;
+
+    }
+    
+    .iniciar
+    {
+      border: 1px solid #ffffff;
+      border-radius:0.2rem;
+      margin-right:5px;
+    }
+    .pruebaprime{
+      border: 1px solid;
+      border-radius:0.2rem;
+      background-color: #4686c1;
+      margin-left:5px;
+      
+
+
+    }
+    #pruebap{
+     color:#232f3e;
+
+
+    }
+
+    .jumbotron-section {
+      background-image: url('../images/banner_lol.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .lead, .my-4{
+      color:white !important;
+    }
+#propaganda{
+  width: 350px;
+}
+    .jumbotron .display-4, #gratis,#favoritos{
+      color:white;
+    }
+
+.card{
+background-color: #3d2e4b;
+
+} 
+
+.card-body{
+  padding-left: 0;
+  padding-right: 0;
+  height:200px;
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
+}   
+.card-text
+{ 
+  margin:0;
+  padding:0.3rem;
+  border:0;
+  background-color: #544463;
+  color:#4686c1;
+
+}
+
+.card-title{
+  padding:0.3rem;
+  color:#ffffff;
+}
+.btn-primary
+{align-self: baseline !important;}
