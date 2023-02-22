@@ -2,11 +2,30 @@
   margin: 0;
   padding: 0rem;
   box-sizing: border-box;
-
+  font-family: Amazon Ember Regular, Helvetica, Arial, sans-serif !important;
 }
 
-body{
+@font-face {
+  font-family: "Amazon Ember Regular";
+  src: url("../fonts/AmazonEmber_Rg.ttf");
+}
+
+@font-face {
+  font-family: "Amazon Ember Light";
+  src: url("../fonts/AmazonEmber_Rg.ttf");
+}
+
+@font-face {
+  font-family: "Amazon Ember Medium";
+  src: url("../fonts/AmazonEmber_Rg.ttf");
+}
+
+body {
   background-color: #0c041c !important;
+}
+
+nav {
+  box-shadow: 0 0 50px black;
 }
 
 #navbarNavDropdown {
@@ -26,6 +45,21 @@ body{
   font-weight: bold;
 }
 
+.navbar-nav{
+  align-items: center;
+}
+
+.nav-item.dropdown{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 40px;
+}
+
+.nav-link.dropdown-toggle{
+    color: #c2bcd3 !important;
+}
+
 .navbar-nav .nav-link {
   color: #fff;
   font-weight: bold;
@@ -39,7 +73,6 @@ body{
 #idioma {
   font-size: 16px;
 }
-
 
 .dropdown-toggle::after {
   content: "";
@@ -63,24 +96,36 @@ body{
 
 .iniciar {
   border: 1px solid #ffffff;
-  border-radius: 0.2rem;
-  margin-right: 5px;
+  font-size: 0.85rem !important;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .pruebaprime {
+  color: #232f3e;
+  font-size: 0.85rem !important;
+  font-family: Amazon Ember Regular;
   border: 1px solid;
-  border-radius: 0.2rem;
-  background-color: #4686c1;
-  margin-left: 5px;
-
-
-
+  margin-left: 15px;
+  background-color: #1a98ff;
+  border-color: #1a98ff;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.pruebaprime:hover{
+background-color: #5fb7ff;
+border-color: #239cff;
+  
 }
 
 #pruebap {
   color: #232f3e;
-
-
 }
 
 .jumbotron-section {
@@ -89,7 +134,8 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   height: 400px;
-
+  display: flex;
+  align-items: center;
 }
 
 .lead,
@@ -109,9 +155,17 @@ body{
   color: white;
 }
 
+.jumbotron .display-4 {
+  font-size: 1.75rem !important;
+}
+
+.jumbotron .lead {
+  font-size: 1rem !important;
+}
+
 .card {
   background-color: #0a1a31;
-  border-radius: 20px;
+  border-radius: 10px;
 
 }
 
@@ -139,13 +193,26 @@ body{
 }
 
 .card img {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .btn-primary {
   align-self: baseline !important;
   background-color: #9547f1;
   border: 0px;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.btn-primary:hover{
+  background-color: #b27eff;
+}
+
+
+.jumbotron .btn-primary {
+  font-size: 1rem;
 }
 
 
@@ -228,7 +295,7 @@ ol {
 
 }
 
-#favoritos2{
+#favoritos2 {
   color: white !important;
   margin: 0;
   padding: 1rem;
@@ -246,7 +313,7 @@ ol {
   background-color: #3d2e4b;
 }
 
-.volve a{
+.volve a {
   text-decoration: none;
 }
 
@@ -254,16 +321,16 @@ ol {
   padding: 2rem;
 }
 
-#ofertas{
+#ofertas {
   color: white !important;
   margin: 0;
   padding: 1rem;
 }
 
-.ofertas .card-text{
+.ofertas .card-text {
   padding-left: 30px;
 }
 
-.ofertas a{
+.ofertas a {
   margin-left: 30px;
 }
