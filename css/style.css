@@ -12,7 +12,6 @@ body{
 #navbarNavDropdown {
   display: flex;
   justify-content: flex-end;
-  padding-right: 14rem;
 }
 
 .navbar,
@@ -43,7 +42,6 @@ body{
 
 
 .dropdown-toggle::after {
-
   content: "";
   display: inline-block;
   width: 20px;
@@ -55,8 +53,6 @@ body{
 
 .dropdown-menu {
   background-color: #3d2e4b;
-
-
   color: aqua;
 }
 
@@ -232,7 +228,7 @@ ol {
 
 }
 
-#favoritos2 {
+#favoritos2{
   color: white !important;
   margin: 0;
   padding: 1rem;
@@ -248,10 +244,26 @@ ol {
 
 .volve {
   background-color: #3d2e4b;
+}
 
+.volve a{
+  text-decoration: none;
 }
 
 .juegos {
   padding: 2rem;
+}
 
+#ofertas{
+  color: white !important;
+  margin: 0;
+  padding: 1rem;
+}
+
+.ofertas .card-text{
+  padding-left: 30px;
+}
+
+.ofertas a{
+  margin-left: 30px;
 }
