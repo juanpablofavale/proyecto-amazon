@@ -13,8 +13,8 @@
 </head>
 
 <body id="inicio">
-  <div class="container">
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <div class="d-flex flex-column align-items-center">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark col-12 col-xxl-10">
       <a class="navbar-brand" href="#"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns="http://www.w3.org/2000/svg"
           class="tw-svg__asset tw-svg__asset--logoprimegamingnosmile tw-svg__asset--inherit" width="145" height="38.8"
@@ -81,15 +81,12 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-
-
-
         </ul>
       </div>
     </nav>
   </div>
-  <main>
-    <div class="container-xxl">
+  <main class="d-flex flex-column align-items-center">
+    <div class="col-12 col-xxl-10">
       <section class="jumbotron-section">
         <div class="jumbotron">
           <div id="propaganda">
@@ -97,169 +94,172 @@
             <p class="lead">Reclama una cápsula de Prime Gaming para obtener nuevos aspectos y subir de nivel más rápido
               con Prime Gaming.
             </p>
-            <hr class="my-4">
             <p id="gratis">Gratis con Amazon Prime</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Obtén contenido en el juego</a>
           </div>
         </div>
       </section>
+      <div class="presentados">
+        <img src="./images/mini1.jpg" alt="LoL">
+        <img src="./images/mini2.jpg" alt="LoL 2">
+        <img src="./images/mini3.jpg" alt="Valorant">
+        <img src="./images/mini4.jpg" alt="Fall Guys">
+        <img src="./images/mini5.jpg" alt="FIFA 23">
+      </div>
       <nav class="navbar navbar-dark bg-dark" id="barra_busq">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center">
-            <a class="nav-link menu" href="#" id="Todos">Todos</a>
-            <a class="nav-link menu">Contenido del juego</a>
-            <a class="nav-link menu">Juegos Semanales</a>
-            <!-- Aquí van los elementos a la izquierda de la barra de búsqueda -->
-          </div>
-          <form class="d-flex" onsubmit="return false;">
-
-            <div class="input-group">
-              <span class="input-group-text lupita"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></span>
-              <input class="form-control me-2 text-white barra" type="search" placeholder="Buscar en Prime Gaming"
-                aria-label="Buscar">
-            </div>
-
-          </form>
-
+        <div class="d-flex justify-content-start gap-3 align-items-center">
+          <a class="nav-link menu active" href="#">Todos</a>
+          <a class="nav-link menu">Contenido en el juego</a>
+          <a class="nav-link menu">Juegos semanales</a>
+          <!-- Aquí van los elementos a la izquierda de la barra de búsqueda -->
         </div>
+        <form class="d-flex" onsubmit="return false;" style="width: 400px;">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text lupita"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg></span>
+            <input class="form-control me-2 text-white barra" type="search" placeholder="Buscar Prime Gaming"
+              aria-label="Buscar">
+          </div>
+        </form>
       </nav>
-
-
       <section class="container-fluid juegos">
-        <p id="favoritos">Nuestros juegos favoritos, Gratis con amazon prime</p>
+        <p id="favoritos" class="px-5">Nuestros juegos favoritos, <span>gratis con Prime</span></p>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="card">
-                    <img src="./images/bats.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        BATS: Bloodsucker Anti-Terror Squad
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+              <div class="row d-flex flex-row gap-3 flex-nowrap justify-content-center m-0 p-0">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img src="./images/bats.jpg" alt="BATS">
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      BATS: Bloodsucker Anti-Terror Squad
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/nw.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        New World
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      New World
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/candycrush.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 20 días</p>
-                      <h5 class="card-title">
-                        Candy Crush Saga
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>20 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Candy Crush Saga
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/dko.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        Divine Knowout
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Divine Knowout
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="card">
-                    <img src="./images/lost Ark.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        Lost Ark
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+              <div class="row d-flex flex-row gap-3 flex-nowrap justify-content-center m-0 p-0">
+                <div class="card">
+                  <div class="card-img-wrap">
+                    <img src="./images/lost_Ark.jpg" alt="Lost Ark">
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Lost Ark
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/madden.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        Madden 2023
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Madden 2023
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/valorant.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        Valorant
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>20 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Valorant
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="card">
+                <div class="card">
+                  <div class="card-img-wrap">
                     <img src="./images/setter.jpg">
-                    <div class="card-body">
-                      <p class="card-text">Finaliza dentro de 30 días</p>
-                      <h5 class="card-title">
-                        The Setter
-                      </h5>
-
-                      <a href="#" class="btn btn-primary">Reclamar</a>
-                    </div>
+                  </div>
+                  <div class="separador">
+                    <p class="card-text">Finaliza en <span>30 días</span></p>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      The Setter
+                    </h5>
+                    <a href="#" class="btn btn-primary">Reclamar</a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+              style="left: -80px;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+              style="right: -80px;">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
       </section>
-
-
       <section class="container-fluid juegos">
         <p id="favoritos2">Juegos nuevos cada semana, gratis con Prime</p>
         <div id="myCarousel2" class="carousel slide" data-ride="carousel">
